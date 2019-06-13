@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
-
-# In[6]:
-
-
+#
 import numpy as np
 from matplotlib import pyplot as plt
 import pandas as pd
@@ -41,10 +38,3 @@ plt.annotate('B', xy=(0.93, .1), xycoords="axes fraction", fontsize=18,
 plt.tight_layout()
 fig.savefig('plot_barcharts.png', dpi=300)
 plt.show()
-
-
-# In[ ]:
-
-
-
-

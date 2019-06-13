@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
-
-# In[8]:
-
-
+#
 import numpy as np
 from matplotlib import pyplot as plt
 import pandas as pd
@@ -68,10 +65,3 @@ plt.annotate('D', xy=(0.90, 0.90), xycoords="axes fraction", fontsize=12,
 plt.tight_layout()
 fig.savefig('plot_4barcharts_phil.png', dpi=300)
 plt.show()
-
-
-# In[ ]:
-
-
-
-
