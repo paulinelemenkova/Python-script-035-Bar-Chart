@@ -19,7 +19,7 @@ fig = plt.figure(figsize=(10.0, 4.0), dpi=300)
 fig.suptitle('Bar chart for the bathymetry of the Mariana Trench',
              fontsize=10, fontweight='bold', x=0.5, y=0.99)
 
-def add_at(ax, t, loc=2):
+def add_at(ax, t, loc=4):
     fp = dict(size=11)
     _at = AnchoredText(t, loc=loc, prop=fp)
     ax.add_artist(_at)
@@ -33,7 +33,7 @@ plt.xlabel('Profiles, nr. 1-25, unsorted', fontsize=10, fontfamily='sans-serif')
 plt.ylabel('Depths, m', fontsize=10, fontfamily='sans-serif')
 plt.xticks(rotation=15, size=8)
 plt.yticks(rotation=0, size=8)
-add_at(ax, "A", loc=4)
+add_at(ax, "A")
 
 # subplot 2
 ax = fig.add_subplot(122)
@@ -43,7 +43,7 @@ plt.xlabel('Profiles, nr. 1-25, sorted', fontsize=10, fontfamily='sans-serif')
 plt.ylabel('Depths, m', fontsize=10, fontfamily='sans-serif')
 plt.xticks(rotation=15, size=8)
 plt.yticks(rotation=0, size=8)
-add_at(ax, "B", loc=4)
+add_at(ax, "B")
 
 # visualizing and saving
 plt.tight_layout()
