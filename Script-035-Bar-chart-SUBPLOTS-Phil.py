@@ -4,12 +4,11 @@ import os
 import pandas as pd
 import numpy as np
 from matplotlib import pyplot as plt
+import seaborn as sns
 import matplotlib.artist as martist
 from matplotlib.offsetbox import AnchoredText
-import seaborn as sns
 
 sns.set_style('whitegrid')
-sns.set_context('paper')
 
 os.chdir('/Users/pauline/Documents/Python')
 df = pd.read_csv("Tab-GeomorphPhil.csv")
@@ -39,7 +38,7 @@ plt.title('Sample points across Sunda Plate')
 plt.xlabel('Cross-section profiles', fontsize=10, fontfamily='sans-serif')
 plt.xticks(np.arange(25), (names), rotation=45, fontsize=8)
 plt.ylabel('Number of observation ponts', fontsize=10, fontfamily='sans-serif')
-add_at(ax, "A", loc=2)
+add_at(ax, "A")
 
 # subplot 2
 ax = fig.add_subplot(222)
@@ -48,7 +47,7 @@ plt.title('Sample points across Philippine Plate')
 plt.xlabel('Cross-section profiles', fontsize=10, fontfamily='sans-serif')
 plt.xticks(np.arange(25), (names), rotation=45, fontsize=8)
 plt.ylabel('Number of observation ponts', fontsize=10, fontfamily='sans-serif')
-add_at(ax, "B", loc=2)
+add_at(ax, "B")
 
 
 # subplot 3
@@ -58,7 +57,7 @@ plt.title('Slope steepness (tangent angles °)')
 plt.xlabel('Cross-section profiles', fontsize=10, fontfamily='sans-serif')
 plt.xticks(np.arange(25), (names), rotation=45, fontsize=8)
 plt.ylabel('Slope angles, tangent °', fontsize=10, fontfamily='sans-serif')
-add_at(ax, "C", loc=2)
+add_at(ax, "C")
 
 # subplot 4
 ax = fig.add_subplot(224)
